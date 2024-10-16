@@ -1,0 +1,139 @@
+html {
+    font-size: var(--baseFont);
+}
+
+body {
+    background: var(--black);
+    font-family: var(--fontPrimary);
+    color: var(--poufsouffle);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    #__nuxt,
+    #__layout,
+    #app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+    p,
+    li {
+        font-size: inherit;
+    }
+    b,
+    strong,
+    .bold {
+        font-weight: bold;
+    }
+    i,
+    .italic {
+        font-style: italic;
+    }
+    .invisible {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .button{
+        margin-top: 1rem;
+        background-color: var(--griffondor);
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        font-family: var(--fontPrimary);
+        font-size: 2.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
+    .bg-griffondor{
+        background-color: var(--griffondor);
+        color: var(--poufsouffle);
+    }
+
+    .bg-poufsouffle{
+        background-color: var(--poufsouffle);
+        color: var(--black);
+    }
+
+    .bg-serpentard{
+        background-color: var(--serpentard);
+        color: var(--white);
+    }
+
+    .bg-serdaigle{
+        background-color: var(--serdaigle);
+        color: var(--white);
+    }
+
+    .bg-black{
+        background-color: var(--black);
+        color: var(--poufsouffle);
+    }
+
+    .bg-white{
+        background-color: var(--beige);
+        color: var(--serpentard);
+    }
+
+    .min-h-50 {
+        min-height: 50vh;
+    }
+
+    .min-h-100 {
+        min-height: 100vh;
+    }
+
+    section {
+        width: 100vw;
+        color: var(--white);
+        font-weight: 800;
+        padding: 5rem 1rem;
+
+        p{
+            line-height: 165%;
+        }
+
+        p, li, button, input, label, th, td{
+            font-family: 'Handlee', cursive;
+        }
+
+        h1{
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            letter-spacing: 0.2rem;
+        }
+
+        h3{
+            font-size: 2rem;
+            letter-spacing: 0.1rem;
+            font-family: var(--fontPrimary);
+        }
+    }
+}
+
+body {
+    &.has-hover {
+        * {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &.no-scroll {
+        overflow: hidden;
+    }
+}

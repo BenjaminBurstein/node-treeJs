@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Harry';
+    src:url("../../fonts/harryp.eot") format("embedded-opentype"),
+    url("../../fonts/harryp.woff2") format("woff2"),
+    url("../../fonts/harryp.woff") format("woff"),
+    url("../../fonts/harryp.ttf") format("truetype");
+}
